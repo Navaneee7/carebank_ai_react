@@ -83,7 +83,7 @@ export default function Sidebar({ onAnalyze, loading, onLogout, role = 'customer
           <div className="sidebar-logo-icon">💳</div>
           <h1>CareBank</h1>
         </div>
-        <p className="sidebar-subtitle">AI Financial Wellness</p>
+        <p className="sidebar-subtitle">Financial Wellness Platform</p>
         
         <div style={{ display: 'flex', gap: 10, marginTop: 16 }}>
           <button className="icon-btn" onClick={toggleTheme} title="Toggle Dark/Light Mode">
@@ -167,7 +167,7 @@ export default function Sidebar({ onAnalyze, loading, onLogout, role = 'customer
         {role !== 'banker' && (
           <div className="sidebar-section">
             <button className="analyze-btn" onClick={handleSubmit} disabled={!file || loading}>
-              {loading ? <><div className="spinner" /> Analyzing...</> : <><Zap size={18} /> Run AI Analysis</>}
+              {loading ? <><div className="spinner" /> Analyzing...</> : <><Zap size={18} /> Analyze Finances</>}
             </button>
           </div>
         )}

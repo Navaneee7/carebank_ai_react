@@ -78,3 +78,5 @@ You can test the platform using the `transactions.csv` file located in the root 
 *   Graceful fallback for AI services if quota limit is reached.
 
 ---
+---
+*Empowering your financial journey with CareBank.*

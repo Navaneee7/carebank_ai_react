@@ -32,7 +32,7 @@ models.Base.metadata.create_all(bind=engine)
 # ---------------------
 # App Initialization
 # ---------------------
-app = FastAPI(title="CareBank AI API", version="1.0.0")
+app = FastAPI(title="CareBank Unified API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,

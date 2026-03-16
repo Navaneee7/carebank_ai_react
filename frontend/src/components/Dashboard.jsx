@@ -47,10 +47,10 @@ export default function Dashboard({ data, token }) {
 
   const tourSteps = [
     { title: 'Welcome to CareBank AI', content: 'Your personal financial wellness companion. Let\'s get you started!', icon: '💳' },
-    { title: 'Upload Data', content: 'Use the sidebar to upload your CSV or PDF bank statements.', icon: '📤' },
-    { title: 'Set Budgets', content: 'Set your spending limits or use "Suggest" to let AI help you.', icon: '📊' },
-    { title: 'Explore Insights', content: 'Check your health score, trends, and tax estimations in the tabs.', icon: '💡' },
-    { title: 'Chat with AI', content: 'Use the chat widget to ask anything about your finances.', icon: '🤖' }
+    { title: 'Analyze Finances', content: 'Use the sidebar to sync your CSV or PDF bank statements for a deep dive.', icon: '📤' },
+    { title: 'Personalized Budgets', content: 'Set your spending limits or use "Suggest" to see optimized recommendations.', icon: '📊' },
+    { title: 'Wealth Insights', content: 'Check your health score, trends, and tax estimations in the tabs below.', icon: '💡' },
+    { title: 'Smart Assistant', content: 'Use the chat widget to ask any questions about your financial path.', icon: '🤖' }
   ];
 
   const nextStep = () => {
@@ -188,7 +188,7 @@ export default function Dashboard({ data, token }) {
       </div>
 
       <div className="advisor-card">
-        <div className="chart-title" style={{ marginBottom: 16 }}><Bot size={18} style={{ color: '#a78bfa' }} /> AI Wealth Advisor – Key Insights</div>
+        <div className="chart-title" style={{ marginBottom: 16 }}><Bot size={18} style={{ color: '#a78bfa' }} /> Wealth Assistant – Key Insights</div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           {Array.isArray(advice) ? advice.map((item, i) => (
             <div key={i} className="advisor-badge" style={{ display: 'block', width: '100%' }}>{item}</div>

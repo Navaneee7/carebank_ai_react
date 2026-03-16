@@ -192,8 +192,8 @@ class SavingsGoalAgent:
         }
 
 
-class AdvisorAgent:
-    """Evaluates health score and formats financial context for the AI chat."""
+class WealthAssistantAgent:
+    """Evaluates health score and formats financial context for the chat assistant."""
 
     def run(self, budget_summary: dict, budget_alerts: list, subs: list) -> list[str]:
         recommendations = []
@@ -243,7 +243,7 @@ class Orchestrator:
         self.risk = RiskAgent()
         self.budget = BudgetAgent()
         self.forecast = ForecastAgent()
-        self.advisor = AdvisorAgent()
+        self.assistant = WealthAssistantAgent()
         self.subscription = SubscriptionAgent()
         self.savings = SavingsGoalAgent()
         self.multimonth = MultiMonthAgent()
@@ -302,11 +302,11 @@ class Orchestrator:
                         }
                     )
 
-        # 8. Get advisor recommendations (Moved here to use alerts and subs)
-        advice = self.advisor.run(budget_summary, budget_alerts, subs)
-
-        # Build context for chat
-        ai_context = self.advisor.build_context(budget_summary, category_spending, subs, savings_plan)
+        # 8. Get advisor recommendations 
+        advice = self.assistant.run(budget_summary, budget_alerts, subs)
+ 
+         # Build context for chat
+        ai_context = self.assistant.build_context(budget_summary, category_spending, subs, savings_plan)
 
         # 9. Multi-month trends
         monthly_trends = self.multimonth.run(df)

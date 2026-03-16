@@ -5,7 +5,7 @@ import time
 
 def print_banner():
     print("="*60)
-    print("      🏦 CAREBANK AI - UNIFIED LAUNCHER 🚀")
+    print("      🏦 CAREBANK FINANCIAL PLATFORM - LAUNCHER 🚀")
     print("="*60)
     print("This script will help you start the CareBank Full-Stack app.")
     print("-"*60)
