@@ -140,7 +140,7 @@ export default function ManagerDashboard({ data, token }) {
             <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border-color)', color: 'var(--text-muted)', fontSize: '0.85rem' }}>
               <th style={{ padding: '12px' }}>Customer</th>
               <th>Health Score</th>
-              <th>AI Health Status</th>
+              <th>Health Analysis</th>
               <th>Risk Anomalies</th>
               <th>Activity</th>
               <th style={{ textAlign: 'right' }}>Actions</th>

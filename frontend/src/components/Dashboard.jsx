@@ -46,7 +46,7 @@ export default function Dashboard({ data, token }) {
   const [tourStep, setTourStep] = useState(0);
 
   const tourSteps = [
-    { title: 'Welcome to CareBank AI', content: 'Your personal financial wellness companion. Let\'s get you started!', icon: '💳' },
+    { title: 'Welcome to CareBank', content: 'Your personal financial wellness companion. Let\'s get you started!', icon: '💳' },
     { title: 'Analyze Finances', content: 'Use the sidebar to sync your CSV or PDF bank statements for a deep dive.', icon: '📤' },
     { title: 'Personalized Budgets', content: 'Set your spending limits or use "Suggest" to see optimized recommendations.', icon: '📊' },
     { title: 'Wealth Insights', content: 'Check your health score, trends, and tax estimations in the tabs below.', icon: '💡' },

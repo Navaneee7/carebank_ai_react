@@ -9,7 +9,7 @@ export default function ChatWidget({ aiContext }) {
   const [messages, setMessages] = useState([
     {
       role: 'ai',
-      text: "Hello! I'm your CareBank AI advisor. Upload your transactions and run the analysis, then ask me anything about your finances! 💰",
+      text: "Hello! I'm your CareBank assistant. Sync your transactions and I can help you understand your spending and reach your goals! 💰",
     },
   ]);
   const [input, setInput] = useState('');
@@ -65,7 +65,7 @@ export default function ChatWidget({ aiContext }) {
       <div className="chat-header">
         <div className="chat-header-dot" />
         <Sparkles size={16} style={{ color: '#a78bfa' }} />
-        <h3>Conversational Financial AI</h3>
+        <h3>Financial Smart Assistant</h3>
       </div>
 
       <div className="chat-messages">
