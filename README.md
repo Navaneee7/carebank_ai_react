@@ -1,81 +1,81 @@
-# CareBank – Personalized Banking & Financial Wellness System
+# 🏦 CareBank AI – Next-Gen Financial Intelligence 🚀
 
-CareBank is an AI-powered financial wellness dashboard that leverages Generative and Agentic AI to help users track spending, detect risks, forecast cash flow, and get personalized financial advice.
+CareBank is a premium, AI-driven financial wellness platform designed for both **Customers** and **Bank Managers**. It transforms raw transaction data into actionable insights using a multi-agent AI system powered by **Gemini 2.0 Flash**.
 
-## 🌟 Features
-
-*   **Multi-Agent AI Analysis**:
-    *   **Spending Monitor Agent**: Categorizes your raw transaction data.
-    *   **Risk Agent**: Uses machine learning (`IsolationForest`) to detect anomalies and flag risky spending behavior.
-    *   **Budget Agent**: Calculates your total income, total expenses, and assigns a Financial Health Score (0-100).
-    *   **Forecast Agent**: Uses a rolling average to predict next month's cash flow.
-*   **Conversational AI Advisor**: Chat directly with a Gemini-powered financial advisor that understands your specific budget and transaction history.
-*   **Interactive Dashboard**: Upload your CSV, adjust budget limits, and view beautiful charts of your financial health.
+![CareBank Banner](https://img.shields.io/badge/AI-Agentic%20Finance-blueviolet?style=for-the-badge) ![React](https://img.shields.io/badge/Frontend-React%20%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![FastAPI](https://img.shields.io/badge/Backend-FastAPI-005571?style=for-the-badge&logo=fastapi)
 
 ---
 
-## 🏗️ Tech Stack
+## 🌟 Key Features
 
-*   **Frontend**: React + Vite, Material UI (MUI), Recharts, Lucide React.
-*   **Backend**: Python + FastAPI, Pandas, Scikit-learn.
-*   **AI Integration**: Google GenAI (`gemini-2.5-flash`).
+### 👤 For Customers (Financial Wellness)
+*   **Savings Goals Tracker**: Set financial targets with real-time progress bars and AI timelines.
+*   **Spending Trends**: Visual month-over-month comparisons of income vs. expenses.
+*   **Tax Estimator**: Automatic detection of deductible expenses (Section 80C/80D) and estimated tax liability.
+*   **Health Score History**: Track your financial well-being over time with interactive line charts.
+*   **Smart Bill Reminders**: Detects recurring payments and notifies you before they are due.
+*   **AI Wealth Advisor**: A conversational agent that knows your specific budget and transaction history.
+*   **Dark/Light Mode**: Premium glassmorphic UI with a seamless theme toggle.
 
----
-
-## 🚀 How to Run the App
-
-The project is split into two separate servers. You need to run both concurrently in separate terminal windows.
-
-### 1. Backend (FastAPI + AI Agents)
-
-1. Open a terminal and navigate to the `backend` folder:
-   ```bash
-   cd backend
-   ```
-2. Install the required Python dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Create a `.env` file inside the `backend` folder and add your Gemini API Key:
-   ```env
-   GEMINI_API_KEY=your_api_key_here
-   ```
-4. Start the FastAPI server:
-   ```bash
-   python main.py
-   ```
-   *The backend will be running at `http://localhost:8000`.*
-
-### 2. Frontend (React + Vite)
-
-1. Open a **new** terminal window and navigate to the `frontend` folder:
-   ```bash
-   cd frontend
-   ```
-2. Install the Node.js packages:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-   *The frontend will be running at `http://localhost:5173`.*
+### 💼 For Bank Managers (Portfolio Management)
+*   **Customer Search & Filter**: Instant filtering by Health Score, risk level, or customer name.
+*   **Flag for Review**: Mark high-risk customers for manual follow-up with internal notes.
+*   **Portfolio Export**: One-click CSV export of the entire customer portfolio.
+*   **System-wide Alerts**: Real-time notifications when a customer's score drops below a critical threshold.
 
 ---
 
-## 💡 How to Use the Dashboard
-
-1. Open `http://localhost:5173` in your browser.
-2. In the **Sidebar**, upload your bank statement. (A sample `transactions.csv` is provided in the root folder).
-3. **Important:** The CSV must contain the columns: `Date`, `Description`, and `Amount`.
-4. Adjust your monthly budget limits for Food, Transport, Shopping, and Other.
-5. Click **"Run AI Analysis"**.
-6. View your dashboard, charts, and Risk Alerts. 
-7. Use the chat widget on the bottom to ask the AI for custom financial advice!
+## 🧠 The AI Agent Engine
+CareBank uses a coordinated **Multi-Agent Orchestrator**:
+1.  **Spending Agent**: Categorizes transactions using fuzzy logic and keyword matching.
+2.  **Risk Agent**: Uses `IsolationForest` to detect anomalous spending patterns.
+3.  **Tax Agent**: identifies tax-deductible investments and expenses.
+4.  **Multi-Month Agent**: Analyzes long-term trends across multiple statements.
+5.  **Personalized Advisor**: A Gemini-powered LLM that provides human-like financial coaching.
 
 ---
 
-## 🔒 Notes on the AI Chat
+## 🏗️ Technical Stack
+*   **Frontend**: React, Vite, Recharts (Charts), Lucide (Icons), Framer Motion.
+*   **Backend**: Python, FastAPI, SQLAlchemy (SQLite), Pandas.
+*   **AI**: Google Gemini Pro / Flash API.
 
-If the Gemini API reaches its free-tier rate limit (Quota Exceeded), the chat will automatically and gracefully fall back to a rule-based advisor to ensure the app continues working without crashing.
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+*   Python 3.10+
+*   Node.js 18+
+*   Gemini API Key ([Get it here](https://aistudio.google.com/))
+
+### 2. Backend Setup
+```bash
+cd backend
+pip install -r requirements.txt
+# Create a .env file:
+# GEMINI_API_KEY=your_key_here
+python main.py
+```
+
+### 3. Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 📂 Sample Data
+You can test the platform using the `transactions.csv` file located in the root directory. It contains pre-categorized spending and income to showcase the **Health History** and **Tax Estimator** features.
+
+---
+
+## 🔒 Security
+*   JWT-based Authentication for both Customers and Managers.
+*   Local SQLite database for data privacy.
+*   Graceful fallback for AI services if quota limit is reached.
+
+---
+*Created with ❤️ by Antigravity AI for CareBank.*
