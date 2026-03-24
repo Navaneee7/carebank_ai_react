@@ -1,6 +1,6 @@
 # Final Project Updates & Competition Briefing 🏆🏦
 
-Below is a summary of the high-impact "Killer Features" and technical upgrades implemented in CareBank AI. Use this list to impress the judges!
+Below is a summary of the high-impact  Features and technical upgrades implemented in CareBank AI. 
 
 ### **1. 🧠 Multi-Agent AI Orchestration**
 *   **The Upgrade**: Beyond simple tracking, we now use a tiered agent architecture.
