@@ -455,6 +455,7 @@ body {
   color: var(--accent-primary) !important;
 }
 
+
 /* ===========================
    Main Content
    =========================== */
@@ -1261,4 +1262,104 @@ body {
 
 .manager-table td {
   padding: 16px 12px;
+}
+/* Background */
+.fp-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+}
+
+/* Card */
+.fp-card {
+  width: 360px;
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  background: rgba(30, 41, 59, 0.6);
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.2);
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Icon */
+.fp-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: white;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+}
+
+/* Inputs */
+.fp-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(15, 23, 42, 0.8);
+  color: white;
+  transition: 0.3s;
+}
+
+.fp-card input:focus {
+  box-shadow: 0 0 10px #6366f1;
+}
+
+/* Password wrapper */
+.fp-password {
+  position: relative;
+}
+
+.fp-password span {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+  color: #94a3b8;
+}
+
+/* Button */
+.fp-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fp-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #8b5cf6;
+}
+
+/* Message */
+.fp-message {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
